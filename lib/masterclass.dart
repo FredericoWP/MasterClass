@@ -1,16 +1,18 @@
-int calculate() {
-  return 6 * 7;
-}
+List<int> sequencia = [];
+var index = 0;
+var limite = 100;
 
-///A sequência de Fibonacci é infinita. Portanto, o ideal é que seja defina um valor que tenha como [objetivo]
-List<int> fibonacci(int objetivo) {
-  List<int> sequencia = [0, 1];
-  var startIndex = 0;
+///Para elaborar uma sequencia de fibonacci é necessário informar o valor inicial [element] e o comprimento da lista [length]
 
-  do {
-    sequencia.add(sequencia[startIndex] + sequencia[startIndex + 1]);
-    startIndex++;
-  } while (sequencia.last <= objetivo);
-
-  return sequencia;
+List<int> fibonacci(int element, int length) {
+  if (sequencia.isEmpty) {
+    sequencia.add(element);
+  } else if (sequencia.length == 1) {
+    sequencia.add(element + 1);
+  } else {
+    sequencia.add(sequencia[index] + sequencia[index + 1]);
+    index++;
+  }
+  if (sequencia.length >= length) return sequencia;
+  return fibonacci(sequencia.last, length);
 }
