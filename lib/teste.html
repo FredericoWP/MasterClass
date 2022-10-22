@@ -1,0 +1,19 @@
+function gerarCPF(a) { var b = !0, c = 9, d = randomiza(c), e = randomiza(c), f = randomiza(c), g = randomiza(c), h =
+randomiza(c), i = randomiza(c), j = randomiza(c), k = randomiza(c), l = randomiza(c), m = 2 * l + 3 * k + 4 * j + 5 * i
++ 6 * h + 7 * g + 8 * f + 9 * e + 10 * d; m = 11 - mod(m, 11), m >= 10 && (m = 0); var n = 2 * m + 3 * l + 4 * k + 5 * j
++ 6 * i + 7 * h + 8 * g + 9 * f + 10 * e + 11 * d; n = 11 - mod(n, 11), n >= 10 && (n = 0), retorno = "", cpf = b ? "" +
+d + e + f + "." + g + h + i + "." + j + k + l + "-" + m + n : "" + d + e + f + g + h + i + j + k + l + m + n, a.value =
+cpf } function validarCPF(a) { if (a = a.replace(/[^\d]+/g, ""), "" == a) return !1; if (11 != a.length || "00000000000"
+== a || "11111111111" == a || "22222222222" == a || "33333333333" == a || "44444444444" == a || "55555555555" == a ||
+"66666666666" == a || "77777777777" == a || "88888888888" == a || "99999999999" == a) return !1; for (add = 0, i = 0; i
+< 9; i++)add +=parseInt(a.charAt(i)) * (10 - i); if (rev=11 - add % 11, (10==rev || 11==rev) && (rev=0), rev
+        !=parseInt(a.charAt(9))) return !1; for (add=0, i=0; i < 10; i++)add +=parseInt(a.charAt(i)) * (11 - i); return
+        rev=11 - add % 11, (10==rev || 11==rev) && (rev=0), rev !=parseInt(a.charAt(10)) ? !1 : !0 } function
+        gerarCNPJ(a) { var b=!0, c=9, d=randomiza(c), e=randomiza(c), f=randomiza(c), g=randomiza(c), h=randomiza(c),
+        i=randomiza(c), j=randomiza(c), k=randomiza(c), l=0, m=0, n=0, o=1, p=2 * o + 3 * n + 4 * m + 5 * l + 6 * k + 7
+        * j + 8 * i + 9 * h + 2 * g + 3 * f + 4 * e + 5 * d; p=11 - mod(p, 11), p>= 10 && (p = 0); var q = 2 * p + 3 * o
+        + 4 * n + 5 * m + 6 * l + 7 * k + 8 * j + 9 * i + 2 * h + 3 * g + 4 * f + 5 * e + 6 * d; q = 11 - mod(q, 11), q
+        >= 10 && (q = 0), retorno = "", cnpj = b ? "" + d + e + "." + f + g + h + "." + i + j + k + "/" + l + m + n + o
+        + "-" + p + q : "" + d + e + f + g + h + i + j + k + l + m + n + o + p + q, a.value = cnpj } function
+        randomiza(a) { var b = Math.round(Math.random() * a); return b } function mod(a, b) { return Math.round(a -
+        Math.floor(a / b) * b) }
