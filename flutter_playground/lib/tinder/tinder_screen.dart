@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/Money/first_screen.dart';
 import 'package:flutter_playground/tinder/widgets/buttons.dart';
@@ -76,7 +77,8 @@ class TinderScreen extends StatelessWidget {
                 const ButtonsTinder(
                     text: "SIGN IN WITH FACEBOOK", icone: Icons.facebook),
                 const ButtonsTinder(
-                    text: "SIGN IN WITH PHONE NUMBER", icone: Icons.messenger),
+                    text: "SIGN IN WITH PHONE NUMBER",
+                    icone: CupertinoIcons.chat_bubble_fill),
                 Container(
                   margin: const EdgeInsets.only(bottom: 30.0),
                   alignment: Alignment.center,
