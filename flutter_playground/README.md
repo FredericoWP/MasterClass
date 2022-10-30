@@ -1,7 +1,12 @@
 # flutter_playground
 
-A new Flutter project.
+Playground flutter 
+ - Challenges proposed for training.
+ 
+---
+### LoginScreen
 
+[![LoginScreen](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/assets/LoginScreen.PNG)](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/lib/login)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
