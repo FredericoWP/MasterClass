@@ -2,9 +2,16 @@
 
 Playground flutter 
  - Challenges proposed for training.
- 
 ---
-### LoginScreen
+### MoneyControlScreen_clone
+
+[![MoneyControlScreen](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/assets/moneyControl.PNG)](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/lib/Money)
+---
+### TinderScreen_clone
+
+[![TinderScreen](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/assets/tinderClone.PNG)](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/lib/tinder)
+---
+### LoginScreen_clone
 
 [![LoginScreen](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/assets/LoginScreen.PNG)](https://github.com/FredericoWP/MasterClass/blob/master/flutter_playground/lib/login)
 ## Getting Started
