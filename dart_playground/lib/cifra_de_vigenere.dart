@@ -1,4 +1,5 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
+// https://pt.wikipedia.org/wiki/Cifra_de_Vigenère
 
 import 'dart:math';
 
