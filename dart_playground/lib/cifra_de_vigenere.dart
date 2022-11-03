@@ -1,11 +1,14 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
 // https://pt.wikipedia.org/wiki/Cifra_de_Vigenère
-
 import 'dart:math';
-final List<String> alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456_'.split('');
+
+final List<String> alpha =
+    ' !"#\$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'.split('');
 
 main() {
-  final vigenere = CifraVigenere(text: "MasterClass_06");
+  final vigenere = CifraVigenere(
+      text:
+          r"Flutterando is the largest Flutter community in Brazil. Think about Flutter, think about Flutterando. Be part of our community!");
   vigenere.encrypt();
   vigenere.decrypt();
 }
@@ -36,7 +39,7 @@ class CifraVigenere {
 
   encrypt() {
     final _key = keyGen.split('');
-    final msg = text.toUpperCase().split('');
+    final msg = text.split('');
     var _crypt = [];
 
     for (int i = 0; i < text.length; i++) {
